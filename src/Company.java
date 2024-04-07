@@ -4,29 +4,32 @@ import employees.Worker;
 
 public class Company {
     public static void main(String[] args) {
-        Employee employees[] = new Employee[5];
+        Employee employees[] = new Employee[7];
 
-        Manager employeeOne = new Manager("Adam", 10000, 0);
-        Worker employeeTwo = new Worker("Beth", 20000, "Cook");
-        Employee employeeThree = new Employee("Johnny", 30000);
-        Employee employeeFour = new Employee("Mark", 40000);
-        Worker employeeFive = new Worker("Chris", 50000, "Garbage Collector");
+        Manager employeeSix = new Manager("Ben", 1000, 0);
+        Employee employeeSeven = new Employee("Harry", 300);
+        Employee employeeEight = new Employee("Eric", 4500);
+        Employee employeeNine = new Employee("Jimmy", 9000);
+        Employee employeeTen = new Employee("Walter", 5000);
 
-        employees[0] = employeeOne;
-        employees[1] = employeeTwo;
-        employees[2] = employeeThree;
-        employees[3] = employeeFour;
-        employees[4] = employeeFive;
+        Worker employeeEleven = new Worker("Jack", 1000, "Waiter");
+        Employee employeeTwelve = new Employee("William", 200);
 
-        employeeOne.setSalary(7500);
+        employees[0] = employeeSix;
+        employees[1] = employeeSeven;
+        employees[2] = employeeEight;
+        employees[3] = employeeNine;
+        employees[4] = employeeTen;
 
-        int count = 0;
+        employees[5] = employeeEleven;
+        employees[6] = employeeTwelve;
 
         for(Employee employee : employees) {
-            System.out.println(employee);
-            if(!(employee instanceof Manager)) {
-                employeeOne.setNumberOfSubordinates(count++);
+            employee.setSalary(employee.getSalary() + 500);
+            if(employee instanceof Manager) {
+                ((Manager) employee).setNumberOfSubordinates(7500);
             }
+            System.out.println(employee);
         }
     }
 }
