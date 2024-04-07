@@ -21,6 +21,6 @@ public class Employee {
     }
 
     public String toString() {
-        return "Employee: " + this.fullName + " Salary: " + this.salary;
+        return "Employee: " + this.fullName + ", Salary: " + this.salary;
     }
 }
