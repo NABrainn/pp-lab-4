@@ -28,6 +28,7 @@ public class Company {
             employee.setSalary(employee.getSalary() + 500);
             if(employee instanceof Manager) {
                 ((Manager) employee).setNumberOfSubordinates(7500);
+                employee.setSalary(7500);
             }
             System.out.println(employee);
         }
