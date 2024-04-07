@@ -28,7 +28,6 @@ public class Company {
             }
         }
 
-
         for(Employee employee : Employees) {
             if(employee instanceof Manager) {
                 employeeOne.setNumberOfSubordinates(count);
