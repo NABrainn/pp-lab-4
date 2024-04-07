@@ -12,7 +12,7 @@ public class Worker extends Employee{
         return this.position;
     }
 
-    public void setPosition() {
+    public void setPosition(String position) {
         this.position = position;
     }
 

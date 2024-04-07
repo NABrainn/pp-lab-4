@@ -18,9 +18,15 @@ public class Company {
         employees[3] = employeeFour;
         employees[4] = employeeFive;
 
+        employeeOne.setSalary(7500);
+
+        int count = 0;
 
         for(Employee employee : employees) {
             System.out.println(employee);
+            if(!(employee instanceof Manager)) {
+                employeeOne.setNumberOfSubordinates(count++);
+            }
         }
     }
 }
