@@ -7,13 +7,13 @@ public class Company {
         Employee[] Employees = new Employee[7];
 
         Manager employeeOne = new Manager("Ben", 1000, 0);
-        Employee employeeTwo = new Employee("Harry", 300);
+        Manager employeeTwo = new Manager("Harry", 300, 0);
         Employee employeeThree = new Employee("Eric", 4500);
         Employee employeeFour = new Employee("Jimmy", 9000);
-        Employee employeeFive = new Employee("Walter", 5000);
+        Worker employeeFive = new Worker("Walter", 5000, "Baker");
 
         Worker employeeSix = new Worker("Jack", 1000, "Waiter");
-        Employee employeeSeven = new Employee("William", 200);
+        Worker employeeSeven = new Worker("William", 200, "Firefighter");
 
         Employees[0] = employeeOne;
         Employees[1] = employeeTwo;
