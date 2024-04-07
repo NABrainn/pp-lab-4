@@ -26,14 +26,19 @@ public class Company {
 
         int count = 0;
 
-
         for(Employee employee : Employees) {
             if(!(employee instanceof Manager)) {
                 count++;
+            }
+        }
+
+        for(Employee employee : Employees) {
+            if(!(employee instanceof Manager)) {
                 employee.setSalary(employee.getSalary() + 500);
+
             }
             if(employee instanceof Manager) {
-                ((Manager) employee).setNumberOfSubordinates(7500);
+                ((Manager) employee).setNumberOfSubordinates(count);
                 employee.setSalary(7500);
             }
             System.out.println(employee);
