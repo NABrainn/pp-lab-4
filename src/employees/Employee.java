@@ -1,3 +1,5 @@
+package employees;
+
 public class Employee {
 
     private String fullName;
@@ -21,6 +23,6 @@ public class Employee {
     }
 
     public String toString() {
-        return "Employee: " + this.fullName + " Salary: " + this.salary;
+        return "employees.Employee: " + this.fullName + " Salary: " + this.salary;
     }
 }
