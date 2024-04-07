@@ -21,9 +21,6 @@ public class Company {
 
         for(Employee employee : employees) {
             System.out.println(employee);
-            if(!(employee instanceof Manager)) {
-
-            }
         }
     }
 }
